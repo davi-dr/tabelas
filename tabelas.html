@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            background: rgb(252, 252, 164);
+        }
+
+        caption {
+            border: 0px solid black;
+            background: rgb(102, 70, 247);
+            padding: 10px;
+            font-weight: bolder;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        th {
+            border: 2px solid black;
+            background: rgb(171, 171, 226);
+            padding: 15px;
+        }
+        tfoot {
+            background: rgb(241, 85, 85);
+            font-weight: bolder;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <table>
+        <caption>Tabela preços de Custos</caption> <!-- titulo de tabela/acessibilidade -->
+
+        <thead><!-- cabeçalho tabela -->
+            <tr>
+                <th>Área</th>
+                <th>Curso</th>
+                <th>Investimento</th>
+                <!-- th-célula que será entendida como um "cabeçalho", -->
+            </tr> <!-- tr-linha -->
+            
+        </thead>
+    
+        <tfoot>
+            <tr>
+                <td colspan="3">Valores sujeitos a alterações sem prévio aviso</td>
+                <!-- colspan- ocupe mais de uma linha ou mais de uma coluna. -->
+            </tr>
+    
+        </tfoot>
+    
+        <tbody>
+            <tr>
+                <td rowspan="3">Design</td>
+                <!-- rowspan- ocupe mais de uma linha ou mais de uma coluna. -->
+                <td>InDesign</td>
+                <td>R$ 1.000,00</td>
+                <!-- td-uma célula comum de conteúdo/dados -->
+            </tr>
+    
+            <tr>
+                
+                <td>Photoshop</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+    
+            <tr>
+                
+                <td>Illustrator</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+    
+            <tr>
+                <td rowspan="4">Development</td>
+                <td>HTML</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            
+            <tr>
+               
+                <td>CSS</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+    
+            <tr>
+                
+                <td>JavaScript</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+    
+            <tr>
+                
+                <td>PHP</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+   
+    
+</body>
+</html>

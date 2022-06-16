@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Grande</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        caption {
+            background-color: gray;
+            font-weight: bolder;
+            padding: 8px;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        thead > tr > th {
+            position: sticky; /* Cabeçalho fixo em tabelas grandes */
+            top: -1px;
+            background-color: black;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: pink;
+
+            /* nth-child n2:numero de linhas, odd:impar, even:par */
+            /* efeito zebrado */
+
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+            position: relative;
+        }
+
+        tr, td, th {
+            border: 1px solid black;
+            padding: 8px;
+            
+        }
+
+        th {
+            background-color: black;
+            color: white;
+        }
+        
+        .number {
+            text-align: center;
+        }
+
+        .cor {
+            /* background-color: rgba(128, 128, 128, 0.384); */
+        }
+
+        tfoot {
+            background: rgba(231, 229, 81, 0.753);
+            text-align: center;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>10 países mais ricos do mundo em 2020</h1>
+    <table>
+        <caption>10 países mais ricos do mundo em 2020</caption>
+        <thead>
+            <tr>
+                <th>Países</th>
+                <th style="width:120px;">PIB per capita</th>
+            </tr>
+    
+        </thead>
+    
+        <tbody>
+            <tr class="cor">
+                <td>1. Estados Unidos</td>
+                <td class="number">$ 62,869</td>
+                
+            </tr>
+
+            <tr>
+                <td>2. Rússia</td>
+                <td class="number">$ 28,797</td>
+            </tr>
+
+            <tr class="cor">
+                <td>3. China</td>
+                <td class="number">$ 18,116</td>
+            </tr>
+
+            <tr>
+                <td>4. Alemanha	</td>
+                <td class="number">$ 52,386</td>
+            </tr>
+
+            <tr class="cor">
+                <td>5. Reino Unido</td>
+                <td class="number">$ 45,741</td>
+            </tr>
+
+            <tr>
+                <td>6. França</td>
+                <td class="number">$ 45,893</td>
+            </tr>
+
+            <tr class="cor">
+                <td>7. Japão</td>
+                <td class="number">$ 44,246</td>
+            </tr>
+
+            <tr>
+                <td>8. Israel</td>
+                <td class="number">$ 37,994</td>
+            </tr>
+
+            <tr class="cor">
+                <td>9. Coreia do Sul</td>
+                <td class="number">$ 43,290</td>
+            </tr>
+
+            <tr>
+                <td>10. Arábia Saudita</td>
+                <td class="number">$ 55,730</td>
+            </tr>
+
+            <tr>
+                <td>11. Emirados Árabes Unidos</td>
+                <td class="number">$ 69,222</td>
+            </tr>
+
+            <tr>
+                <td>12. Canadá</td>
+                <td class="number">$ 49,690</td>
+            </tr>
+
+            <tr>
+                <td>13. Suíça</td>
+                <td class="number">$ 65,0100</td>
+            </tr>
+
+            <tr>
+                <td>14. Índia</td>
+                <td class="number">$ 7,859</td>
+            </tr>
+
+            <tr>
+                <td>15. Austrália</td>
+                <td class="number">$ 52,379</td>
+            </tr>
+
+            <tr>
+                <td>16. Turquia	</td>
+                <td class="number">$ 28,044</td>
+            </tr>
+
+            <tr>
+                <td>17. Itália</td>
+                <td class="number">$ 39,676</td>
+            </tr>
+
+            <tr>
+                <td>17. Itália</td>
+                <td class="number">$ 39,676</td>
+            </tr>
+
+            <tr>
+                <td>18. Catar</td>
+                <td class="number">$ 129,638</td>
+            </tr>
+
+            <tr>
+                <td>19. Espanha</td>
+                <td class="number">$ 40,172</td>
+            </tr>
+
+            <tr>
+                <td>20. Suécia</td>
+                <td class="number">$ 53,652</td>
+            </tr>
+
+            <tr>
+                <td>20. Suécia</td>
+                <td class="number">$ 53,652</td>
+            </tr>
+
+            <tr>
+                <td>20. Suécia</td>
+                <td class="number">$ 53,652</td>
+            </tr>
+
+            <tr>
+                <td>20. Suécia</td>
+                <td class="number">$ 53,652</td>
+            </tr>
+
+            <tr>
+                <td>20. Suécia</td>
+                <td class="number">$ 53,652</td>
+            </tr>
+
+            
+    
+        </tbody>
+        
+    
+        <tfoot>
+            <tr>
+                <td colspan="2"> <!-- colspan- ocupe mais de uma linha ou mais de uma coluna. -->
+                    Desenvolvido por <a href="https://github.com/davi-dr" target="_blank">Davi Rodrigues</a> 2022
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora itaque, ipsam quidem, modi consequatur amet fugiat labore ex perspiciatis laudantium at. Repellat quae nemo aliquam voluptas nobis beatae, laboriosam a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ut ad, enim non voluptate quos eum atque iure facere unde illo odit harum labore in. Voluptate quod ratione debitis exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum debitis nisi quisquam maiores, error quidem ut quia, vel provident, necessitatibus dicta similique? Ut temporibus saepe tenetur error hic reiciendis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora itaque, ipsam quidem, modi consequatur amet fugiat labore ex perspiciatis laudantium at. Repellat quae nemo aliquam voluptas nobis beatae, laboriosam a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ut ad, enim non voluptate quos eum atque iure facere unde illo odit harum labore in. Voluptate quod ratione debitis exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum debitis nisi quisquam maiores, error quidem ut quia, vel provident, necessitatibus dicta similique? Ut temporibus saepe tenetur error hic reiciendis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora itaque, ipsam quidem, modi consequatur amet fugiat labore ex perspiciatis laudantium at. Repellat quae nemo aliquam voluptas nobis beatae, laboriosam a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ut ad, enim non voluptate quos eum atque iure facere unde illo odit harum labore in. Voluptate quod ratione debitis exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum debitis nisi quisquam maiores, error quidem ut quia, vel provident, necessitatibus dicta similique? Ut temporibus saepe tenetur error hic reiciendis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora itaque, ipsam quidem, modi consequatur amet fugiat labore ex perspiciatis laudantium at. Repellat quae nemo aliquam voluptas nobis beatae, laboriosam a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ut ad, enim non voluptate quos eum atque iure facere unde illo odit harum labore in. Voluptate quod ratione debitis exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum debitis nisi quisquam maiores, error quidem ut quia, vel provident, necessitatibus dicta similique? Ut temporibus saepe tenetur error hic reiciendis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora itaque, ipsam quidem, modi consequatur amet fugiat labore ex perspiciatis laudantium at. Repellat quae nemo aliquam voluptas nobis beatae, laboriosam a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ut ad, enim non voluptate quos eum atque iure facere unde illo odit harum labore in. Voluptate quod ratione debitis exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum debitis nisi quisquam maiores, error quidem ut quia, vel provident, necessitatibus dicta similique? Ut temporibus saepe tenetur error hic reiciendis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora itaque, ipsam quidem, modi consequatur amet fugiat labore ex perspiciatis laudantium at. Repellat quae nemo aliquam voluptas nobis beatae, laboriosam a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ut ad, enim non voluptate quos eum atque iure facere unde illo odit harum labore in. Voluptate quod ratione debitis exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum debitis nisi quisquam maiores, error quidem ut quia, vel provident, necessitatibus dicta similique? Ut temporibus saepe tenetur error hic reiciendis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora itaque, ipsam quidem, modi consequatur amet fugiat labore ex perspiciatis laudantium at. Repellat quae nemo aliquam voluptas nobis beatae, laboriosam a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ut ad, enim non voluptate quos eum atque iure facere unde illo odit harum labore in. Voluptate quod ratione debitis exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum debitis nisi quisquam maiores, error quidem ut quia, vel provident, necessitatibus dicta similique? Ut temporibus saepe tenetur error hic reiciendis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora itaque, ipsam quidem, modi consequatur amet fugiat labore ex perspiciatis laudantium at. Repellat quae nemo aliquam voluptas nobis beatae, laboriosam a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ut ad, enim non voluptate quos eum atque iure facere unde illo odit harum labore in. Voluptate quod ratione debitis exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum debitis nisi quisquam maiores, error quidem ut quia, vel provident, necessitatibus dicta similique? Ut temporibus saepe tenetur error hic reiciendis.</p>
+    
+</body>
+</html>
